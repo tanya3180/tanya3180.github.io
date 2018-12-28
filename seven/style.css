@@ -1,0 +1,144 @@
+@font-face{
+	font-family: 'BebasRegular';
+	src: url("./BebasRegular/BebasRegular.eot");
+	src: url("./BebasRegular/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	url("./BebasRegular/BebasRegular.woff") format("woff"),
+	url("./BebasRegular/BebasRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'BebasBold';
+	src: url("./BebasBold/BebasBold.eot");
+	src: url("./BebasBold/BebasBold.eot?#iefix")format("embedded-opentype"),
+	url("./BebasBold/BebasBold.woff") format("woff"),
+	url("./BebasBold/BebasBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: 'BebasBook';
+	src: url("./BebasBook/BebasBook.eot");
+	src: url("./BebasBook/BebasBook.eot?#iefix")format("embedded-opentype"),
+	url("./BebasBook/BebasBook.woff") format("woff"),
+	url("./BebasBook/BebasBook.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: 'BebasThin';
+	src: url("./BebasThin/BebasThin.eot");
+	src: url("./BebasThin/BebasThin.eot?#iefix")format("embedded-opentype"),
+	url("./BebasThin/BebasThin.woff") format("woff"),
+	url("./BebasThin/BebasThin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: 'RobotoLight';
+	src: url("./RobotoLight/RobotoLight.eot");
+	src: url("./RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("./RobotoLight/RobotoLight.woff") format("woff"),
+	url("./RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    display:flex;
+    flex-direction:center;
+    justify-content:center;
+    width:650px;
+    margin:auto;
+  }
+.header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+    color: white;
+    background: repeating-linear-gradient(
+        -45deg,
+        #4f606a,
+        #4f606a 1px,
+        #42535d 2px,
+        #42535d 7px
+      );
+    width:100%;
+    height:260px;
+   
+  }
+.header_name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: auto;
+  width: 80%;
+  color: white;
+  z-index: 1;
+  margin-top: 20px;
+ 
+}
+.name_number{
+  width: 30%;
+  height: 60%;
+  align-self: center;
+  position: relative;
+ z-index: 2;
+ 
+}
+.name_number:after{
+  content: '';
+  position: absolute;
+  width: 140px;
+  height:140px;
+  border-radius: 50%;
+  background-color: #93cd66;
+  background: radial-gradient(circle at 100px 100px, #93cd66, #000);
+  top:20%;
+  left: 0;
+  z-index: -1;
+  
+  
+}
+.name_base{
+  width: 65%;
+  align-self: center;
+
+}
+h1{
+  font-family:  "BebasBold", sans-serif;
+  font-size: 13rem;
+  text-shadow:  2px 4px 0 #CCCCCC, 2px 4px 0 #c9c9c9, 0 3px 0 #bbb,  0 3px 2px #aaa,  2px -22px 1px rgba(28,110,164,0);
+ z-index: 99;
+ 
+}
+h2{
+  font-family: "BebasBook", sans-serif;
+  font-size: 2.8rem;
+  line-height: 2.7rem;
+  text-align: left;
+  letter-spacing: 4px;
+  padding: 0 0 0 10px;
+}
+h2 i{
+font-family: "BebasThin", sans-serif;
+font-weight: lighter;
+
+}
+.header_description{
+  width: 60%;
+  font-family: 'RobotoLight', sans-serif;
+font-size: 10px;
+color: #bbb;
+text-align: justify;
+border: 1px solid #bbb;
+padding: 5px;
+margin-bottom: 20px;
+}
